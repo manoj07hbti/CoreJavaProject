@@ -9,10 +9,15 @@ public class ExceptionDemo {
            }
        catch (Exception e){
 
-           System.out.println("Exception occured and catched here....");
-          }
+            System.out.println("***********Exception occured and catched here...." +e);
+        }
+        finally {
+            System.out.println("THIS IS FINALLY BLOCK .........");
+        }
 
         System.out.println("Inside method After Exception ....");
+
+
         return result;
 
     }
@@ -23,7 +28,7 @@ public class ExceptionDemo {
 
         System.out.println("Before Exception ....");
 
-        int output= obj.divide(6,0);
+        int output= obj.divide(6,2);
 
 
         System.out.println("After Exception ....");
